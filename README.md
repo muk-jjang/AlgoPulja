@@ -7,7 +7,7 @@
 ## Github Rule
 
 1. issue를 만든다.
-   - issue name: [해당주차 주제] 본인이 푼 문제
+   - issue name: [해당주차] 본인이 푼 문제
    - 해당 이슈에서 branch 생성
    - 해당 branch에 코드 작성
 2. 완료 후 풀리퀘스트를 날린다.
