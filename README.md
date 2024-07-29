@@ -23,7 +23,7 @@
 
 ### Commit Message
 
-- `feat : {something}` : 문제를 풀고 처음 커밋하는 경우
+- `add : {something}` : 문제를 풀고 처음 커밋하는 경우
 - `fix : {something}` : 풀었던 문제를 수정하는 경우
 - `docs : {something}` : `README` 등 문서를 수정하는 경우
 
