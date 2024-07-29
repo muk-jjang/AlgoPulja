@@ -2,7 +2,7 @@
 
 ## 스터디 팀원
 
-[윤성준](https://github.com/muk-jjang), [이동준](https://github.com/dongjune8931), [임수현](https://github.com/yeonsue)
+[윤성준](https://github.com/muk-jjang), [이동준](https://github.com/dongjune8931), [임수현](https://github.com/yeonsue), [서재은](https://github.com/JaeEunSeo)
 
 ## Github Rule
 
