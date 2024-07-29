@@ -53,6 +53,46 @@ def solution(s):
     #     if sentence_len % i ==0 :
     #         divisors.append(i)
 
+    for divisor in range(1, sentence_len+1): # 0~ 1000까지 슬라이싱 돌겠다
+        count = 1
+        temp = s[0:divisor] # 맨 처음 비교할 슬라이싱 값
+        result = "" # 결과값 저장
+        for i in range(divisor,len(s),divisor):
+            if temp == s[i:i+divisor]: # 다음 슬라이싱이랑 같으면 카운팅
+                count+=1
+            else: 
+                if count > 1: # 달랐을 때 count >1 이면 연달아 중복 됨 -> 압축가능
+                    result += str(count) + temp
+                    temp = s[i:i+divisor]
+                    count = 1
+                else:
+                    result += temp
+                    temp = s[i:i+divisor]
+                    count = 1
+        if count > 1: # 마지막 슬라이싱 고려
+            result += str(count) + temp
+        else : 
+            result += temp
+        answer = min(answer, len(result)) # min을 통해서 answer 업데이트
+                
+    return answer
+
+s = "ababcdcdababcdcd"
+
+print(solution(s))
+
+'''
+상윤 조언
+'''
+
+def solution(s):
+    answer = 1000
+    sentence_len = len(s)
+    # divisors = []
+    # for i in range(1, sentence_len):
+    #     if sentence_len % i ==0 :
+    #         divisors.append(i)
+
     for divisor in range(1, sentence_len+1):
         count = 1
         temp = s[0:divisor]
@@ -62,21 +102,16 @@ def solution(s):
                 count+=1
             else: 
                 if count > 1:
-                    result += str(count) + temp
-                    temp = s[i:i+divisor]
-                    count = 1
-                else:
-                    result += temp
-                    temp = s[i:i+divisor]
-                    count = 1
+                    result += str(count) 
+
+                result += temp
+                temp = s[i:i+divisor]
+                count = 1    
+
         if count > 1:    
-            result += str(count) + temp
-        else : 
-            result += temp
+            result += str(count) 
+
+        result += temp
         answer = min(answer, len(result))
                 
     return answer
-
-s = "ababcdcdababcdcd"
-
-print(solution(s))
