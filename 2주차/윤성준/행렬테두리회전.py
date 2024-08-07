@@ -76,21 +76,34 @@ def solution(rows, columns, queries):
     for query in queries:
         x1, y1 = query[0]-1, query[1]-1
         x2, y2 = query[2]-1, query[3]-1
-
-        dy = [1, 0, -1, 0]
+        dis1 = x2 - x1
+        dis2 = y2 - y1
         dx = [0, 1, 0 ,-1]
+        dy = [1, 0, -1, 0]
 
         stat = True
         idx = 0
+        iter = 0
+        temp = matrix[x1][y1]
         while stat:
             nx = x1 + dx[idx]
             ny = y1 + dy[idx]
+            iter+=1
 
-            if not((x1< nx < x2) and (y1 < ny < y2)):
+            matrix[nx][ny] = temp
+
+
+            if iter == dis1:
                 idx+=1
+            elif iter == dis1+dis2:
+                idx+=1
+            elif iter == 2*dis1+dis2:
+                idx+=1
+            elif iter == 2*(dis1+dis2):
+                idx+=1
+                stat = False
 
-
-
+            
     return answer
 
 rows = 6
