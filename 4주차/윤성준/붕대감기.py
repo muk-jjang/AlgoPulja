@@ -22,18 +22,26 @@ def solution(bandage, health, attacks):
             if health <= 0 : 
                 return -1
             
-            health_step = 1
+            health_step = 0
+
         # 체력이 최대 체력이랑 같으면 회복 없음
         elif health == max_health:
             continue
+
         #연속 성공하면 추가 회복 고려해주고 연속성공 초기화
         elif health_step == bandage[0]:
             health += (bandage[2] + bandage[1])
+
             health_step = 1
         # 초당회복량
         else:
             health += bandage[1]
             health_step += 1
+
+        
+        # 최대 체력이 넘으면 최대체력으로 바꿔줌
+        if health > max_health:
+            health = max_health
     
     return health
 
