@@ -41,18 +41,18 @@ class Solution {
 
         }
 
-        for (int node : out.keySet()) {
-            if (out.get(node) >= 2) { // 2개 이상나가고
-                if (!in.containsKey(node)) {  // 들어오는 간선이 없으면
-                    answer[0] = node;     // 생성 정점!!
+       for (int i : out.keySet()) {
+            if (out.get(i) >= 2) { // 2개 이상나가고
+                if (!in.containsKey(i)) {  // 들어오는 간선이 없으면
+                    answer[0] = i;     // 생성 정점!!
                 } else {              //들어오는 간선 존재하면
                     answer[3] += 1;  // 8자
                 }
             }
         }
 
-        for (int node : in.keySet()) {    //들어오는 정점 중에
-            if (!out.containsKey(node)) {  //나가는 정점에 포함되어 있지 않으면
+        for (int i : in.keySet()) {    //들어오는 정점 중에
+            if (!out.containsKey(i)) {  //나가는 정점에 포함되어 있지 않으면
                 answer[2] += 1;    // 막대
             }
         }
