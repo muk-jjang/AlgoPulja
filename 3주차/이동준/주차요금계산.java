@@ -2,7 +2,7 @@ import java.util.*;
 
 class Solution {
     public static int[] solution(int[] fees, String[] records) {
-        Map<String, Integer> park = new HashMap<>();  // 차번호 ,시간
+        Map<String, Integer> park = new HashMap<>();  // 차번호 ,시간8
         // 차번호, 요금 / 차번호 기준 오름차순 정렬
         Map<String, Integer> cost = new TreeMap<>();
 
