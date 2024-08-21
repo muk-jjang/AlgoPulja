@@ -3,7 +3,7 @@ pop: 배열의 가장 앞의 요소 뽑기
 insert: 배열의 가장 뒤로 넣기
 
 1. 두 큐의 합을 구함, 합이 작은 큐를 기준으로 생각, 합이 큰 큐에서 하나씩 작은 큐로 옮김
-2. 작은큐의 합이 총합/2와 같아지면 횟수 반환, 커지면 작은큐의 합에서 요소 제외
+2. 작은 큐의 합이 총합/2와 같아지면 횟수 반환, 커지면 작은큐의 합에서 요소 제외
 
 
 작은 큐에서 먼저 요소를 뺏다고 해도 큰 큐의 가장 마지막으로 들어가기 때문에 큰 큐에서 작은 큐로 옮긴다는 기준을 잡아도 문제 없음
@@ -47,7 +47,7 @@ def solution(queue1, queue2):
     queue2 = deque(queue2)
     q1_sum = sum(queue1)
     q2_sum = sum(queue2)
-    limit = len(queue1) * 2
+    limit = len(queue1) * 2 + 2
     
     while q1_sum != q2_sum:
         if q1_sum > q2_sum:
