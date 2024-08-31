@@ -2,7 +2,7 @@
 
 ## 스터디 팀원
 
-[윤성준](https://github.com/muk-jjang), [이동준](https://github.com/dongjune8931), [임수현](https://github.com/yeonsue), [서재은](https://github.com/JaeEunSeo)
+[윤성준](https://github.com/muk-jjang), [이동준](https://github.com/dongjune8931), [임수현](https://github.com/yeonsue), [서재은](https://github.com/JaeEunSeo), [장유정](https://github.com/uxia99)
 
 ## Github Rule
 
@@ -14,6 +14,7 @@
 3. 확인을 받고 merge
 
 ### Folder Structure
+
 ```
 {주차}
 |---이름
@@ -30,7 +31,6 @@
 ## 1. 스터디 시간
 
 `매주 수요일 저녁 9시 30분, 7월 24일부터 시작`
-
 
 ## 2. 스터디 규칙
 
@@ -51,9 +51,8 @@
    - 해당 풀이를 내기까지 어떤 시행착오 머리에서 어떤 흐름으로 해당 코드까지 도출됐는지?
      → 본인이 문제를 어떻게 접근했는지 적어줘야함, 도식화(아이패드에 그려도 됨)
      → 관련해서 스터디원들이 피드백
-3. 3문제는 매주 똑같은 문제 정해서 풀고, 각자 풀이 설명, 스터디날 1문제 정하고 라이브 코딩 
+3. 3문제는 매주 똑같은 문제 정해서 풀고, 각자 풀이 설명, 스터디날 1문제 정하고 라이브 코딩
 
    → 해커랭크나 프로그래머스에서 레벨 정해 놓고 문제 뽑기(level 2 ~ 3, Medium)
-
 
 ! 다양한 방식으로 풀어보길 권장드립니다!
