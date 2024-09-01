@@ -1,4 +1,4 @@
-# Algorithm_99
+# AlgoPulja
 
 ## 스터디 팀원
 
