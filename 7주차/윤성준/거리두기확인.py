@@ -44,7 +44,22 @@ def bfs(candidate, place): # candidate는 'P'
 def solution(places):
     answers = []
     
-
-def solution(places):
-    answer = []
-    return answer
+    for place in places:
+        candidates = deque()
+        answer = True
+        for i in range(5):
+            for j in range(5):
+                if place[i][j] == 'P':
+                    candidates.append((i, j))
+        
+        for candidate in candidates:
+            if not bfs(candidate, place):
+                answer = False
+                break
+        
+        if not answer:
+            answers.append(0)
+        else:
+            answers.append(1)
+        
+    return answers
