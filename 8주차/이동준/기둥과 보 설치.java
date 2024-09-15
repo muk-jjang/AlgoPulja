@@ -5,8 +5,8 @@ import java.util.List;
 class Solution {
     public int[][] solution(int n, int[][] build_frame) {
         int[][] answer = {};
-        boolean[][] piliars = new boolean[n+5][n+5];
-        boolean[][] bo = new boolean[n+5][n+5];
+        boolean[][] piliars = new boolean[n+2][n+2];
+        boolean[][] bo = new boolean[n+2][n+2];
         
         for (int[] bf : build_frame) {
             int x = bf[0];
